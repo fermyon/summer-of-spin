@@ -6,6 +6,10 @@ Welcome to the first challenge of Summer of Spin! In this challenge, you will de
 - Building Spin apps with pre-build components
 - Reading from a file (optional)
 
+### DISCLAIMER
+
+Performing encryption tasks in a web assembly application is not secure. Specifically, web assembly doesn't support anything that involves the handling of private keys because it opens up vulnerabilities to [timing attacks](https://en.m.wikipedia.org/wiki/Timing_attack). Please reach out to us via [Discord](https://www.fermyon.com/blog/fermyon-discord) with any questions. 
+
 # Building the application
 
 ### Requirements
