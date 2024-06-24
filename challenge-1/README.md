@@ -8,7 +8,7 @@ Welcome to the first challenge of Summer of Spin! In this challenge, you will de
 
 ### \*\*\*\**DISCLAIMER*\*\*\*\*
 
-This challenge includes a web assembly component (`/encryption-module/main.wasm`) that performs cryptographic operations. While it's not a concern in this case because there is no sensitive data being handled, performing cryptographic tasks in a web assembly application is not secure. Specifically, web assembly doesn't support anything that involves the handling of private keys because it opens up vulnerabilities to [timing attacks](https://en.m.wikipedia.org/wiki/Timing_attack). Please reach out to us via [Discord](https://www.fermyon.com/blog/fermyon-discord) with any questions. 
+This challenge includes a WebAssembly component (`/encryption-module/main.wasm`) that performs cryptographic operations. While it's not a concern in this case because there is no sensitive data being handled, performing cryptographic tasks in a WebAssembly application is not secure. Specifically, WebAssembly doesn't have constant-time operations, which opens up vulnerabilities to [timing attacks](https://en.m.wikipedia.org/wiki/Timing_attack). Please reach out to us via [Discord](https://www.fermyon.com/blog/fermyon-discord) with any questions. 
 
 # Building the application
 
