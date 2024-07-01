@@ -6,6 +6,11 @@ Welcome to the first challenge of Summer of Spin! In this challenge, you will de
 - Building Spin apps with pre-build components
 - Reading from a file (optional)
 
+### Scenario
+
+You are the head coach of an intensely competitive Summer soccer team, and you have been having trouble with the coaches of the other teams intercepting key plays that will help you win the Summer tournament. You have created a foolproof plan that will ensure your victory. All you need to do is add one more player's name to the plan; however, you accidentally encrypted the plan before you could add the final player. You need to decrypt the plan, add the final player's name, and then re-encrypt the plan for safekeeping.
+
+
 ### \*\*\*\**DISCLAIMER*\*\*\*\*
 
 This challenge includes a WebAssembly component (`/encryption-module/main.wasm`) that performs cryptographic operations. While it's not a concern in this case because there is no sensitive data being handled, performing cryptographic tasks in a WebAssembly application is not secure. Specifically, WebAssembly doesn't have constant-time operations, which opens up vulnerabilities to [timing attacks](https://en.m.wikipedia.org/wiki/Timing_attack). Please reach out to us via [Discord](https://www.fermyon.com/blog/fermyon-discord) with any questions. 
@@ -26,8 +31,8 @@ This challenge includes a WebAssembly component (`/encryption-module/main.wasm`)
 
 You will be building a Spin app (using `encryption-module/main.wasm` as a component) that will do the following:
 
-- Read `message.txt` and decrypt the string using the encryption module.
-- Append your name to the end of the decrypted string.
+- Read `plans.txt` and decrypt the string using the encryption module.
+- Append the desired player's name to the end of the decrypted string (don't forget to include a space character).
 - Re-encrypt the newly-created string using the encryption module.
 - Return an HTTP response with the following values:
     - Response code: 200
@@ -75,7 +80,7 @@ If the decrypted message matches the expected value, all required headers are in
 # Helpful hints
 
 Some things to keep in mind:
-- There is a bug in the TinyGo compiler that prevents Spin Golang applications from reading files. If you want to use Golang, you'll need to pass in the `message.txt` file string some other way (i.e. via the body of a curl request or hard-coding).
+- There is a bug in the TinyGo compiler that prevents Spin Golang applications from reading files. If you want to use Golang, you'll need to pass in the `plans.txt` file string some other way (i.e. via the body of a curl request or hard-coding).
 - When you create a Spin application with multiple components, the way they will interact with each other is through HTTP calls (i.e. localhost:3000/your-component-http-trigger-route). In order to do this, you must define an `allowed_outbound_host` in your `spin.toml` file as `http://localhost:3000`.
 - If you get stuck, reach out via our [Discord channel](https://www.fermyon.com/blog/fermyon-discord).
 - Here are some helpful links from the Fermyon documentation:
