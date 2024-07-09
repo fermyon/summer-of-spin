@@ -36,7 +36,7 @@ We’re all around in the [Fermyon Discord server](https://www.fermyon.com/disc
 
 We’ll also post on [X/Twitter](https://twitter.com/fermyontech) and [LinkedIn](https://www.linkedin.com/company/fermyon), dropping some helpful resources and videos.
 
-Yes, the main goal of Advent of Spin is to get you solving problems and winning prizes. But we also hope that you’ll find inspiration in these projects to build something on your own. If that inspiration happens to strike, let us know. We love hearing about the amazing things you build!
+Yes, the main goal of Summer of Spin is to get you solving problems and learning the technology. But we also hope that you’ll find inspiration in these projects to build something on your own. If that inspiration happens to strike, let us know. We love hearing about the amazing things you build!
 
 ## **Prior years challenges**
 
