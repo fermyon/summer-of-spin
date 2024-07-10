@@ -8,7 +8,7 @@ Learning and trying out a new technology for the first time can be a learning cu
 
 Fermyon built Spin to ensure a better experience for developers, and our coding challenges for this summer will allow you to ease into the technology. With these fun coding challenges, you’ll be able to find your footing with Spin and WebAssembly. At the end of each challenge, you’ll learn some valuable skills as a developer, and write and deploy your own Spin applications. 
 
-Starting in late July to the middle of August, we will be updating this repository every Tuesday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value storage, LLMs, etc. 
+Starting in late July to the middle of August, we will be updating this repository every Tuesday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value store, LLMs, etc. 
 
 If you’re confused or unsure on how to proceed with the exercises, we will go over a solution and present each challenge in our weekly Live Code Tuesdays on [YouTube](https://www.youtube.com/@fermyontech/streams). 
 
