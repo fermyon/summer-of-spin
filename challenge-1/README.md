@@ -1,4 +1,4 @@
-# Overview 
+# Overview  
 
 Welcome to the first challenge of Summer of Spin! In this challenge, you will demonstrate the following skills:
 
