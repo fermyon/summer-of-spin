@@ -1,8 +1,0 @@
-.spin/
-*.env
-encryption-module/spin.toml
-*Dockerfile
-script.sh
-app.py
-requirements.txt
-spin.toml
