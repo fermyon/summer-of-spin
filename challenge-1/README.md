@@ -89,4 +89,4 @@ Some things to keep in mind:
     - [Compiling applications](https://developer.fermyon.com/spin/v2/build)
     - [Running applications](https://developer.fermyon.com/spin/v2/running-apps)
     - [Publishing and distribution](https://developer.fermyon.com/spin/v2/distributing-apps)
-        - #TODO: Find out how the actual submission process will work
+        - #TODO: Find out how the actual submission process will work.
