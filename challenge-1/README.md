@@ -3,21 +3,21 @@
 Welcome to the first challenge of Summer of Spin! In this challenge, you will demonstrate the following skills:
 
 - HTTP calls
-- Building Spin apps with pre-build components
+- Building Spin apps with pre-built components
 - Reading from a file (optional)
 
-### Scenario
+## Scenario
 
-You are the head coach of an intensely competitive Summer soccer team, and you have been having trouble with the coaches of the other teams intercepting key plays that will help you win the Summer tournament. You have created a foolproof plan that will ensure your victory. All you need to do is add one more player's name to the plan; however, you accidentally encrypted the plan before you could add the final player. You need to decrypt the plan, add the final player's name, and then re-encrypt the plan for safekeeping.
+You are the head coach of an intensely competitive summer soccer team, and you have been having trouble with the coaches of the other teams intercepting key plays that will help you win the summer tournament. You have created a foolproof plan that will ensure your victory. All you need to do is add one more player's name to the plan; however, you accidentally encrypted the plan before you could add the final player. You need to decrypt the plan, add the final player's name, and then re-encrypt the plan for safekeeping.
 
 
-### \*\*\*\**DISCLAIMER*\*\*\*\*
+## \*\*\*\**DISCLAIMER*\*\*\*\*
 
 This challenge includes a WebAssembly component (`/encryption-module/main.wasm`) that performs cryptographic operations. While it's not a concern in this case because there is no sensitive data being handled, performing cryptographic tasks in a WebAssembly application is not secure. Specifically, WebAssembly doesn't have constant-time operations, which opens up vulnerabilities to [timing attacks](https://en.m.wikipedia.org/wiki/Timing_attack). Please reach out to us via [Discord](https://www.fermyon.com/blog/fermyon-discord) with any questions. 
 
 # Building the application
 
-### Requirements
+## Requirements
 
 - Most recent version of [Spin](https://developer.fermyon.com/spin/v2/install)
 - See language-specific requirements
@@ -27,7 +27,7 @@ This challenge includes a WebAssembly component (`/encryption-module/main.wasm`)
     - [JavaScript](https://developer.fermyon.com/spin/v2/javascript-components)
     - [Other Languages](https://developer.fermyon.com/spin/v2/other-languages)
 
-### Instructions
+## Instructions
 
 You will be building a Spin app (using `encryption-module/main.wasm` as a component) that will do the following:
 
@@ -42,7 +42,7 @@ You will be building a Spin app (using `encryption-module/main.wasm` as a compon
         - `x-encryption-module-path`: The HTTP trigger path you defined for the encryption module in the `spin.toml` file
     - Body: A utf-8-encoded JSON object with `"encryptedMessage"` as the key, and the re-encrypted string as the value.
 
-### Interacting with the encryption module
+## Interacting with the encryption module
 
 The encryption module is set up to accept an HTTP request with the following parameters: 
 
@@ -61,17 +61,17 @@ The encryption module will return a JSON object with the following structure:
 
 # Testing the application
 
-### Requirements
+## Requirements
 - Latest version of [Hurl](https://hurl.dev/) installed
 
-### Instructions
+## Instructions
 
 - Run your Spin application (see [Running Spin Applications](https://developer.fermyon.com/spin/v2/running-apps)). 
 - In your terminal, navigate to the directory containing the `test.hurl` file. 
 - Run the command `hurl --test test.hurl`
 - If your application fails the tests, try using the `--verbose` or `--very-verbose` flags in the `hurl` command to debug.
 
-### What will be tested
+## What will be tested
 
 The Hurl test will evaluate whether the encrypted string returned by the application listening on `http://localhost:3000` returns an encrypted message that can be decrypted by calling `http://localhost:3000/your-encryption-module-http-trigger-path` and compared with the expected string value `${originalEncryptedMessage} + ${yourNameValue}`. 
 
