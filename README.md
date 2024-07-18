@@ -20,8 +20,6 @@ Simply click on each challenge, and follow the instructions.
 
 Challenges will be added here weekly on Mondays, with the challenge starting on July 29th. A walkthrough video will also be released after each challenge week.
 
-- Challenges here
-
 ## **Pre-Requisites**
 
 To participate you need to have the following installed:
