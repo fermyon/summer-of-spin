@@ -18,7 +18,7 @@ Simply click on each challenge, and follow the instructions.
 
 ## Challenges
 
-Challenges will be added every Tuesday during our Live Code Tuesday at [Time here]
+Challenges will be added here weekly on Mondays, with the challenge starting on July 29th. A walkthrough video will also be released after each challenge week.
 
 - Challenges here
 
