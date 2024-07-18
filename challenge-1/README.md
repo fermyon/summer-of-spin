@@ -4,11 +4,10 @@ Welcome to the first challenge of Summer of Spin! In this challenge, you will de
 
 - HTTP calls
 - Building Spin apps with pre-built components
-- Reading from a file (optional)
 
 ## Scenario
 
-You are the head coach of an intensely competitive summer soccer team, and you have been having trouble with the coaches of the other teams intercepting key plays that will help you win the summer tournament. You have created a foolproof plan that will ensure your victory. All you need to do is add one more player's name to the plan; however, you accidentally encrypted the plan before you could add the final player. You need to decrypt the plan, add the final player's name, and then re-encrypt the plan for safekeeping.
+You are the head coach of an intensely competitive summer soccer team, and you have been having trouble with the coaches of the other teams intercepting key plays that will help you win the summer tournament. You have devised a list of code names that represent key plays that will ensure your victory. All you need to do is add a final play to your playbook; however, you accidentally encrypted the playbook before you could add the code name of the final play. You need to decrypt the playbook, add the code name of the final play, and then re-encrypt the playbook for safekeeping.
 
 
 ## \*\*\*\**DISCLAIMER*\*\*\*\*
@@ -31,16 +30,41 @@ This challenge includes a WebAssembly component (`/encryption-module/main.wasm`)
 
 You will be building a Spin app (using `encryption-module/main.wasm` as a component) that will do the following:
 
-- Read `plans.txt` and decrypt the string using the encryption module.
-- Append the desired player's name to the end of the decrypted string (don't forget to include a space character).
+- Receive an HTTP POST request containing the binary data of the encrypted string from the `plans.txt` file.
+- Decrypt the string using the encryption module.
+- Append the desired code name for the play to the end of the decrypted string.
 - Re-encrypt the newly-created string using the encryption module.
 - Return an HTTP response with the following values:
     - Response code: 200
     - Headers:
         - `content-type`: `application/json`
-        - `x-name`: The name value you appended to the decrypted string
+        - `x-secret-play`: The name value you appended to the decrypted string
         - `x-encryption-module-path`: The HTTP trigger path you defined for the encryption module in the `spin.toml` file
-    - Body: A utf-8-encoded JSON object with `"encryptedMessage"` as the key, and the re-encrypted string as the value.
+    - Body: A utf-8 encoded JSON object with `"encryptedMessage"` as the key, and the re-encrypted string as the value.
+
+### Example
+
+Request to the main Spin app:
+
+```
+POST
+Host: localhost:3000
+
+Request body: 
+lEfVdun0UHWUGiHpRuv8QaET3tXm4Xss6f7yf2S56BRzAVm8Y7lgTUVtjxaidJwfbCUrv1BChY1w5+XzyvswAGUZNZdiIaAZ4OqQHrhtOCC+yCwe17Bzj9Qd16bJog==
+```
+
+Response from the main Spin app:
+
+```
+HTTP/1.1 200 OK
+content-type: application/json
+x-secret-play: Very Secret Play
+x-encryption-module-path: crypto
+
+Response body:  
+{"encryptedMessage":"kBgDsdusxSCuzKMjJKSkZYJjhB3O9y0rjP1PHSd9mpXbuJoIe5VXNh2o+yYSRJKbCWGGGnQ2bB3yY7C/QC7rNQINm9GnFBFT7quGCco7xP24EMJf2IV/DcxFVMqka0XRA+5f93LilWSm1xMimi8="}
+```
 
 ## Interacting with the encryption module
 
@@ -58,6 +82,29 @@ The encryption module will return a JSON object with the following structure:
     - `"requestBody"`: The string value passed in to the encryption module for encryption/decryption
     - `"actionType"`: The action specified in the `x-action` header (either `encrypt` or `decrypt`)
     - `"response"`: The encrypted or decrypted value of the `"requestBody"`
+
+### Example
+
+Request to the encryption module:
+
+```
+POST
+Host: localhost:3000
+x-action: encrypt
+
+Request body: 
+Hello, world!
+```
+
+Response from the encryption module:
+
+```
+HTTP/1.1 200 OK
+content-type: application/json
+
+Response body:
+{"requestBody":"Hello, world!","actionType":"encrypt","response":"UTMj2fAinK0V62jNJpERzLP1M9OuhhMD+yIchwhbDe6yKAdUrCD3f4k="}
+```
 
 # Testing the application
 
@@ -89,4 +136,3 @@ Some things to keep in mind:
     - [Compiling applications](https://developer.fermyon.com/spin/v2/build)
     - [Running applications](https://developer.fermyon.com/spin/v2/running-apps)
     - [Publishing and distribution](https://developer.fermyon.com/spin/v2/distributing-apps)
-        - #TODO: Find out how the actual submission process will work
