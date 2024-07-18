@@ -37,3 +37,5 @@ The application needs to have two endpoints:
   - You don't have to implement any form of authentication. You can assume that only the players have access to the endpoint and that each player can only update their record.
   - If there is no player with provided number, return an error response.
   - If an invalid value is provided in the calories field, return an error response.
+
+[This article](https://developer.fermyon.com/spin/v2/key-value-store-tutorial) on the Fermyon blog is a good starting point on how to use the Spin Key-Value store.
