@@ -46,12 +46,8 @@ You will be building a Spin app (using `encryption-module/main.wasm` as a compon
 
 Request to the main Spin app:
 
-```
-POST
-Host: localhost:3000
-
-Request body: 
-lEfVdun0UHWUGiHpRuv8QaET3tXm4Xss6f7yf2S56BRzAVm8Y7lgTUVtjxaidJwfbCUrv1BChY1w5+XzyvswAGUZNZdiIaAZ4OqQHrhtOCC+yCwe17Bzj9Qd16bJog==
+```bash
+curl --request POST --data-binary @plans.txt localhost:3000
 ```
 
 Response from the main Spin app:
@@ -88,12 +84,7 @@ The encryption module will return a JSON object with the following structure:
 Request to the encryption module:
 
 ```
-POST
-Host: localhost:3000
-x-action: encrypt
-
-Request body: 
-Hello, world!
+curl -H 'x-action: encrypt' --data-binary "Hello, world\!" localhost:3000/crypto
 ```
 
 Response from the encryption module:
