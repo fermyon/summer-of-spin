@@ -18,7 +18,7 @@ Simply click on each challenge, and follow the instructions.
 
 ## Challenges
 
-Challenges will be added here weekly on Mondays, with the challenge starting on July 29th. A walkthrough video will also be released after each challenge week.
+Challenges will be added here weekly on Mondays, with the first challenge starting on July 29th. A walkthrough video will also be released after each challenge week.
 
 ## **Pre-Requisites**
 
