@@ -1,3 +1,6 @@
+
+![twc-sos](https://github.com/user-attachments/assets/6d8f9b5e-393a-46bf-a143-5f81d8e3bc70)
+
 # Fermyon Summer of Spin
 
 **Dive into a fun opportunity to learn about Spin and our other projects!** 🏊🏻‍♀️
@@ -8,9 +11,9 @@ Learning and trying out a new technology for the first time can be a learning cu
 
 Fermyon built Spin to ensure a better experience for developers, and our coding challenges for this summer will allow you to ease into the technology. With these fun coding challenges, you’ll be able to find your footing with Spin and WebAssembly. At the end of each challenge, you’ll learn some valuable skills as a developer, and write and deploy your own Spin applications. 
 
-Starting in late July to the middle of August, we will be updating this repository every Tuesday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value store, LLMs, etc. 
+Starting on July 29th to the middle of August, we will be updating this repository every Monday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value store, LLMs, etc. 
 
-If you’re confused or unsure on how to proceed with the exercises, we will go over a solution and present each challenge in our weekly Live Code Tuesdays on [YouTube](https://www.youtube.com/@fermyontech/streams). 
+If you’re confused or unsure on how to proceed with the exercises, we will release a walkthrough video of the challenge's solution a week after it has posted. We will be releasing these walkthroughs [here](https://www.youtube.com/channel/UCGgsMYwLxmIgv1lXaActZqw).
 
 ## **How Do I Participate?**
 
@@ -18,7 +21,7 @@ Simply click on each challenge, and follow the instructions.
 
 ## Challenges
 
-Challenges will be added here weekly on Mondays, with the first challenge starting on July 29th. A walkthrough video will also be released after each challenge week.
+Challenges will be added here weekly on Mondays, with the first challenge starting on July 29th. A walkthrough video will also be released after each challenge week that goes over the solution of that challenge. 
 
 ## **Pre-Requisites**
 
