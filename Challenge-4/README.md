@@ -2,11 +2,11 @@
 
 Welcome to the fourth and final challenge of Summer of Spin 2024!
 
-In this challenge, you will get an intro to Spin Key-Value store by building an application that allows your favorite football (soccer) team to keep track of their players calory intake during the summer break.
+In this challenge, you will get an intro to Spin Key-Value store by building an application that allows your favorite football (soccer) team to keep track of their players calorie intake during the summer break.
 
 ## Spec
 
-It's summer time and your local football league is on break. For players, it's a time to rewind after the long season of intense games. Your local team is worried the players may become unfit by the time they resume for the next season. To ensure that they give the best personalized recovery to all the players when the season resume, they have decided to build an application to keep track of the players' calory in-take.
+It's summer time and your local football league is on break. For players, it's a time to rewind after the long season of intense games. Your local team is worried the players may become unfit by the time they resume for the next season. To ensure that they give the best personalized recovery to all the players when the season resume, they have decided to build an application to keep track of the players' calorie in-take.
 
 Now, it's your job to build this application as a great programmer and supporter of the team!
 
@@ -25,7 +25,7 @@ The application needs to have two endpoints:
   - You can assume that every player has a unique number.
   - When there is a request to add a player with an already existing number, return an error response.
 
-- `/record?player_no=<PLAYER_NO>&calories=<NO_OF_CALORIES>`: This endpoint allows the player to update their calory in-take record. The endpoint accepts the player number and the number of calories they want to add.
+- `/record?player_no=<PLAYER_NO>&calories=<NO_OF_CALORIES>`: This endpoint allows the player to update their calorie in-take record. The endpoint accepts the player number and the number of calories they want to add.
 
   The response for this endpoint should look like:
 
