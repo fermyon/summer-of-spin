@@ -16,8 +16,8 @@ The application needs to have two endpoints:
 
   The response for this endpoint should look like:
 
-  - `200`: `{"success": true, "data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
-  - `400`: `{"success": false}`
+  - `200`: `{"data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
+  - `400`: `{"error": "<ERROR_MESSAGE>"}`
 
   ### Notes:
 
@@ -29,8 +29,8 @@ The application needs to have two endpoints:
 
   The response for this endpoint should look like:
 
-  - `200`: `{"success": true, "data": {"player_name": "<PLAYER_NAME>", "total_calories": "<TOTAL_CALORIES>"}}`
-  - `404`/`400`: `{"success": false}`
+  - `200`: `{"data": {"player_name": "<PLAYER_NAME>", "total_calories": "<TOTAL_CALORIES>"}}`
+  - `404`/`400`: `{"error": "<ERROR_MESSAGE>"}`
 
   ### Notes:
 
