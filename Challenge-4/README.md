@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the forth and final challenge of Summer of Spin 2024!
+Welcome to the fourth and final challenge of Summer of Spin 2024!
 
 In this challenge, you will get an intro to Spin Key-Value store by building an application that allows your favorite football (soccer) team to keep track of their players calory intake during the summer break.
 
