@@ -17,13 +17,13 @@ The application needs to have two endpoints:
   The response for this endpoint should look like:
 
   - `200`: `{"data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
-  - `400`: `{"error": "<ERROR_MESSAGE>"}`
+  - `409`: `{"error": "<ERROR_MESSAGE>"}`
 
   ### Notes:
 
   - You don't have to implement any form of authentication. You can assume that only the team coach will have access to the endpoint.
   - You can assume that every player has a unique number.
-  - When there is a request to add a player with an already existing number, return an `400` response.
+  - When there is a request to add a player with an already existing number, return a `409` response.
 
 - `POST /record {player_no: int, calories: int}`: This endpoint allows the player to update their calorie in-take record. The endpoint accepts the player number and the number of calories they want to add.
 
