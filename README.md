@@ -23,6 +23,7 @@ Simply click on each challenge, and follow the instructions.
 
 Challenges will be added here weekly on Mondays, with the first challenge starting on July 29th. A walkthrough video will also be released after each challenge week that goes over the solution of that challenge. 
 - [Challenge 1](https://github.com/fermyon/summer-of-spin/tree/main/challenge-1)
+- [Challege 1](https://github.com/fermyon/summer-of-spin/tree/main/challenge-2)
 
 ## **Pre-Requisites**
 
