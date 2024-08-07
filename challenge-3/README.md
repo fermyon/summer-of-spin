@@ -30,15 +30,18 @@ First, call the api/start to initialize the game, e.g., `curl -X POST http://127
 
 ```
 
-To guess the word, call the api/guess with the parameter of the guessed word, e.g., `curl http://127.0.0.1:3000/api/guess?gameId=<game_id>&guess=apple`
+To guess the word, call the api/guess with the parameter of the guessed word, e.g., `curl http://127.0.0.1:3000/api/guess?gameId=<game_id>&guess=apple` . If the solution is "along", then correctLetters let's you know which letter correctly guessed.
 
 ```json
 {
   "message": "The game has started, start guessing the word",
   "gameId": "350a4fbe-048e-42ad-a818-01a447a96d95",
   "grid": [["a", "p", "p", "l", "e"], ["", "", "", "", ""], ..., ["", "", "", "", ""]],
-  "currentRow": 0,
-  "solved": false
+  "currentRow": 1,
+  "solved": false,
+  "correctLetters": [
+    "a","_","_","_","_"
+  ]
 }
 
 ```
