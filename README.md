@@ -25,6 +25,13 @@ Challenges will be added here weekly on Mondays, with the first challenge starti
 - [Challenge 1](https://github.com/fermyon/summer-of-spin/tree/main/challenge-1)
 - [Challenge 2](https://github.com/fermyon/summer-of-spin/tree/main/challenge-2)
 
+## Walkthroughs
+
+Feeling stuck or not sure how to proceed on a challenge? Check out our walkthroughs for the challenges here:
+- [Challenge 1 Walkthrough](https://www.youtube.com/watch?v=F6NgBIpwSGo&t=172s)
+
+After releasing each a challenge, a walkthrough of the solution will be posted a week after. Stay tuned!
+
 ## **Pre-Requisites**
 
 To participate you need to have the following installed:
