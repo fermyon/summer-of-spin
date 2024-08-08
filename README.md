@@ -13,7 +13,7 @@ Fermyon built Spin to ensure a better experience for developers, and our coding 
 
 Starting on July 29th to the middle of August, we will be updating this repository every Monday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value store, LLMs, etc. 
 
-If you’re confused or unsure on how to proceed with the exercises, we will release a walkthrough video of the challenge's solution on Fridays a week after it has been posted. We will be releasing these walkthroughs [here](https://www.youtube.com/channel/UCGgsMYwLxmIgv1lXaActZqw).
+If you’re confused or unsure on how to proceed with the exercises, we will release a walkthrough video of the challenge's solution a week after it has been posted. We will be releasing these walkthroughs [here](https://www.youtube.com/channel/UCGgsMYwLxmIgv1lXaActZqw).
 
 ## **How Do I Participate?**
 
