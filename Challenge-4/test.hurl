@@ -1,4 +1,4 @@
-# Test1: Register a new player successfully
+# Test 1: Register a new player successfully
 
 POST http://localhost:3000/register
 Content-Type: application/json
