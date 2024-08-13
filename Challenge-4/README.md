@@ -16,26 +16,24 @@ The application needs to have 2 endpoints:
 
   The response for this endpoint should look like:
 
-  - `201`: `{"data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
-  - `409`: `{"error": "<ERROR_MESSAGE>"}`
+  `201`: `{"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}`
 
   ### Notes:
 
-  - You don't have to implement any form of authentication. You can assume that only the team coach will have access to the endpoint.
-  - You can assume that every player has a unique number.
   - When there is a request to add a player with an already existing number, return a `409` response.
+  - When there is an invalid input, return a `400` response.
+  - You don't have to implement any form of authentication. You can assume that only the team coach will have access to the endpoint.
 
 - `POST /record {player_no: int, calories: int}`: This endpoint allows the player to update their calorie in-take record. The endpoint accepts the player number and the number of calories they want to add.
 
   The response for this endpoint should look like:
 
-  - `200`: `{"data": {"player_name": "<PLAYER_NAME>", "total_calories": "<TOTAL_CALORIES>"}}`
-  - `404`/`400`: `{"error": "<ERROR_MESSAGE>"}`
+  `200`: `{"player_name": "<PLAYER_NAME>", "total_calories": "<TOTAL_CALORIES>"}`
 
   ### Notes:
 
-  - You don't have to implement any form of authentication. You can assume that only the players have access to the endpoint and that each player can only update their record.
   - If there is no player with provided number, return a `404` response.
-  - If an invalid value is provided in the calories field, return a `400` response.
+  - When there is an invalid input, return a `400` response.
+  - You don't have to implement any form of authentication. You can assume that only the players have access to the endpoint and that each player can only update their record.
 
 [This article](https://developer.fermyon.com/spin/v2/key-value-store-tutorial) on the Fermyon blog is a good starting point on how to use the Spin Key-Value store.
