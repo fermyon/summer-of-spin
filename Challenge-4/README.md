@@ -1,6 +1,6 @@
-# Introduction
+# Challenge 4
 
-Welcome to the fourth and final challenge of Summer of Spin 2024!
+Welcome to the 4th and final challenge of Summer of Spin 2024!
 
 In this challenge, you will get an intro to Spin Key-Value store by building an application that allows your favorite football (soccer) team to keep track of their players calorie intake during the summer break.
 
@@ -10,13 +10,13 @@ It's summer time and your local football league is on break. For players, it's a
 
 Now, it's your job to build this application as a great programmer and supporter of the team!
 
-The application needs to have two endpoints:
+The application needs to have 2 endpoints:
 
 - `POST /register {player_name: string, player_no: int}`: This endpoint allows the head coach to register a player by providing their name and number in the request body.
 
   The response for this endpoint should look like:
 
-  - `200`: `{"data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
+  - `201`: `{"data": {"player_name": "<PLAYER_NAME>", "player_no": "<PLAYER_NO>"}}`
   - `409`: `{"error": "<ERROR_MESSAGE>"}`
 
   ### Notes:
