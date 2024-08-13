@@ -13,7 +13,7 @@ Fermyon built Spin to ensure a better experience for developers, and our coding 
 
 Starting on July 29th to the middle of August, we will be updating this repository every Monday with a weekly challenge for you to learn how to write WebAssembly applications. The challenges are intended to resemble a learning progression, which will contain simple to complex concepts like simple static sites, key value store, LLMs, etc. 
 
-If you’re confused or unsure on how to proceed with the exercises, we will release a walkthrough video of the challenge's solution a week after it has posted. We will be releasing these walkthroughs [here](https://www.youtube.com/channel/UCGgsMYwLxmIgv1lXaActZqw).
+If you’re confused or unsure on how to proceed with the exercises, we will release a walkthrough video of the challenge's solution a week after it has been posted. We will be releasing these walkthroughs [here](https://www.youtube.com/channel/UCGgsMYwLxmIgv1lXaActZqw).
 
 ## **How Do I Participate?**
 
@@ -22,6 +22,16 @@ Simply click on each challenge, and follow the instructions.
 ## Challenges
 
 Challenges will be added here weekly on Mondays, with the first challenge starting on July 29th. A walkthrough video will also be released after each challenge week that goes over the solution of that challenge. 
+- [Challenge 1](https://github.com/fermyon/summer-of-spin/tree/main/challenge-1)
+- [Challenge 2](https://github.com/fermyon/summer-of-spin/tree/main/challenge-2)
+- [Challenge 3](https://github.com/fermyon/summer-of-spin/tree/main/challenge-3)
+
+## Walkthroughs
+
+Feeling stuck or not sure how to proceed on a challenge? Check out our walkthroughs for the challenges here:
+- [Challenge 1 Walkthrough](https://www.youtube.com/watch?v=F6NgBIpwSGo&t=172s)
+
+After releasing each a challenge, a walkthrough of the solution will be posted a week after. Stay tuned!
 
 ## **Pre-Requisites**
 
@@ -30,6 +40,9 @@ To participate you need to have the following installed:
 - [Spin](https://developer.fermyon.com/spin/v2/quickstart)
 - [Hurl](https://hurl.dev/docs/installation.html)
 - A [Fermyon Cloud](https://cloud.fermyon.com/) account (it's free!)
+
+## **Submitting Your Work**
+Have you completed a challenge and validated your solution through Hurl? Make sure to fill out this [TypeForm](https://fibsu0jcu2g.typeform.com/to/xrzb0kRt) to receive a Fermyon prize sticker! You also have the opportunity to be recognized on our Discord for completing the challenge (though this is completely optional and up to you).
 
 ## **Nobody Must Code Alone!**
 
