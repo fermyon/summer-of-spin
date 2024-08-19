@@ -28,7 +28,7 @@ The application needs to have 2 endpoints:
 
   The response for this endpoint should look like:
 
-  `200`: `{"player_name": "<PLAYER_NAME>", "total_calories": "<TOTAL_CALORIES>"}`
+  `200`: `{"player_name": "<PLAYER_NAME>", "calories": "<TOTAL_CALORIES>"}`
 
   ### Notes:
 
