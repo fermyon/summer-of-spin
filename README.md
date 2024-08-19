@@ -25,6 +25,7 @@ Challenges will be added here weekly on Mondays, with the first challenge starti
 - [Challenge 1](https://github.com/fermyon/summer-of-spin/tree/main/challenge-1)
 - [Challenge 2](https://github.com/fermyon/summer-of-spin/tree/main/challenge-2)
 - [Challenge 3](https://github.com/fermyon/summer-of-spin/tree/main/challenge-3)
+- [Challenge 4](https://github.com/fermyon/summer-of-spin/tree/main/Challenge-4)
 
 ## Walkthroughs
 
