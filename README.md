@@ -32,6 +32,7 @@ Challenges will be added here weekly on Mondays, with the first challenge starti
 Feeling stuck or not sure how to proceed on a challenge? Check out our walkthroughs for the challenges here:
 - [Challenge 1 Walkthrough](https://www.youtube.com/watch?v=F6NgBIpwSGo&t=172s)
 - [Challenge 2 Walkthrough](https://www.youtube.com/watch?v=G-oaKE4qgPo)
+- [Challenge 3 Walkthrough](https://www.youtube.com/watch?v=_qpDpp_eNDw)
 
 After releasing each a challenge, a walkthrough of the solution will be posted a week after. Stay tuned!
 
